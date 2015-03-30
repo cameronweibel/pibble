@@ -1,5 +1,5 @@
 # pibble
-Rubble interface for the Raspberry Pi (Model 2 for now)
+pibble is a rubble interface for the Raspberry Pi (Model 2 for now)
 
 ##Hardware
 You will need:
@@ -8,10 +8,17 @@ You will need:
 -Wi-Fi dongle
 -Ethernet cable
 
-
 ##Dependencies
 
 Python 3.4
+
+##Installing Raspbian on the Raspberry Pi
+
+Navigate to: http://www.raspberrypi.org/downloads/ and download the Raspbian ZIP file.
+
+![alt text](http://i.imgur.com/KVmTC21.png "Raspbian Download")
+
+It takes a while to download, so get some coffee.
 
 ##Wi-Fi setup
 
