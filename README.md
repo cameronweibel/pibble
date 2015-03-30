@@ -16,7 +16,7 @@ You will need:
 
 ###Windows
 
-Download [Raspbian] (http://www.raspberrypi.org/downloads/)
+*Download [Raspbian] (http://www.raspberrypi.org/downloads/)*
 
 ![alt text](http://i.imgur.com/KVmTC21.png "Raspbian Download")
 
@@ -25,7 +25,7 @@ It takes a while to download, so get some coffee.
 When it is finished downloading, extract the image in your downloads folder by right-clicking and selecting "Extract Here". You can also
 drag the image into the downloads folder from the ZIP browser.
 
-Download Win32 Disk Imager to write the image to the microSD card: http://sourceforge.net/projects/win32diskimager/
+*Download [Win32 Disk Imager] (http://sourceforge.net/projects/win32diskimager/) to write the image to the microSD card. *
 
 Select the image file and make sure your the correct drive is selected!
 
