@@ -3,20 +3,20 @@ Pibble is a rubble interface for the Raspberry Pi (Model 2 for now)
 
 ##Hardware
 You will need:
-+Raspberry Pi Model 2
-+MicroSD card w/adapter (if you don't have a microSD card reader)
-+Wi-Fi dongle
-+Ethernet cable
++ Raspberry Pi Model 2
++ MicroSD card w/adapter (if you don't have a microSD card reader)
++ Wi-Fi dongle
++ Ethernet cable
 
 ##Dependencies
 
-+Python 3.4
++ Python 3.4
 
 ##Setup
 
 ###Windows
 
-To install Raspbian on the Raspberry Pi navigate to: http://www.raspberrypi.org/downloads/ and download the Raspbian ZIP file.
+Download [Raspbian] (http://www.raspberrypi.org/downloads/)
 
 ![alt text](http://i.imgur.com/KVmTC21.png "Raspbian Download")
 
