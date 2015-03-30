@@ -1,24 +1,35 @@
 # pibble
-pibble is a rubble interface for the Raspberry Pi (Model 2 for now)
+Pibble is a rubble interface for the Raspberry Pi (Model 2 for now)
 
 ##Hardware
 You will need:
--Raspberry Pi Model 2
--MicroSD card w/adapter (if you don't have a microSD card reader)
--Wi-Fi dongle
--Ethernet cable
++Raspberry Pi Model 2
++MicroSD card w/adapter (if you don't have a microSD card reader)
++Wi-Fi dongle
++Ethernet cable
 
 ##Dependencies
 
-Python 3.4
++Python 3.4
 
-##Installing Raspbian on the Raspberry Pi
+##Setup
 
-Navigate to: http://www.raspberrypi.org/downloads/ and download the Raspbian ZIP file.
+###Windows
+
+To install Raspbian on the Raspberry Pi navigate to: http://www.raspberrypi.org/downloads/ and download the Raspbian ZIP file.
 
 ![alt text](http://i.imgur.com/KVmTC21.png "Raspbian Download")
 
 It takes a while to download, so get some coffee.
+
+When it is finished downloading, extract the image in your downloads folder by right-clicking and selecting "Extract Here". You can also
+drag the image into the downloads folder from the ZIP browser.
+
+Download Win32 Disk Imager to write the image to the microSD card: http://sourceforge.net/projects/win32diskimager/
+
+Select the image file and make sure your the correct drive is selected!
+
+![alt text](http://i.imgur.com/1tcICOy.png "Win32 Disk Imager")
 
 ##Wi-Fi setup
 
