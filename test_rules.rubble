@@ -1,3 +1,8 @@
 sys::authorized;
 
-#This is a comment.
+#This is a test program to turn on an LED connected to GPIO _ on the Raspberry Pi
+#input(_, "Status Check"), state(X) => output(default, X);
+#button, state(0) => occlude(state(0)), persist(state(1));
+#button, state(1) => occlude(state(1)), persist(state(0));
+
+input(_, hello_rubble) => output(default, "Received");
