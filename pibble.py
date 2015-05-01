@@ -3,6 +3,8 @@ __author__ = 'Cameron Weibel'
 import requests
 import json
 from time import sleep
+import os.path
+import pickle
 # import RPi.GPIO as GPIO
 
 
@@ -46,6 +48,10 @@ class Fragment:
             return "Unexpected HTTP status: %d" % post.status_code
         data = json.loads(post.content)
         self.pid = int(data['pid'])
+        outfile = open('pid.txt','wb')
+        pickle.dump(self.pid, outfile)
+        outfile.close()
+
 
     def transact(self):
         message = '[hello_rubble]'
@@ -74,9 +80,17 @@ class Fragment:
                 print response['error']
             sleep(2)
 
-first = Fragment("test_rules.rubble", 'uABY0Pf8htbo', 'zLXknuvGra4eNOMX')
-print first.create_kbase()
-print first.spawn_father_process()
-print first.pid
-print first.transact()
-print first.listener()
+if __name__ == "__main__":
+    first = Fragment("test_rules.rubble", 'uABY0Pf8htbo', 'zLXknuvGra4eNOMX')
+
+    if not os.path.isfile('pid.txt'):
+        print first.create_kbase()
+        print first.spawn_father_process()
+        print first.pid
+    else:
+        infile = open('pid.txt','rb')
+        first.pid = pickle.load(infile)
+
+    print first.pid
+    print first.transact()
+    print first.listener()
